@@ -36,7 +36,7 @@ button{
     justify-content: space-around;
     min-height: 15%;
     min-width: 50vh;
-    /* height: 20vh; */
+    height: 20vh;
 }
 
 #search-player{
