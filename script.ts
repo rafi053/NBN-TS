@@ -67,10 +67,11 @@ const searchPlayer = async (e:any):Promise<void>=>{
 
 SEARCH_PLAYER.addEventListener('submit', searchPlayer);
 
+
  function addPlayerToGame(player:any) {
     if (player.position === "PG") {
         const div = document.createElement('div') as HTMLDivElement;
-        // div.innerHTML = 'Point Guard';
+        PG.innerHTML='Point Guard';
         const name = document.createElement('p') as HTMLParagraphElement;
         name.textContent = player.playerName
         const threeP = document.createElement('p') as HTMLParagraphElement;
@@ -86,6 +87,7 @@ SEARCH_PLAYER.addEventListener('submit', searchPlayer);
         PG.appendChild(div);
     } else if (player.position === "SG") {
         const div = document.createElement('div') as HTMLDivElement;
+        SG.innerHTML='Shooting Guard';
         const name = document.createElement('p') as HTMLParagraphElement;
         name.textContent = player.playerName
         const threeP = document.createElement('p') as HTMLParagraphElement;
@@ -101,6 +103,7 @@ SEARCH_PLAYER.addEventListener('submit', searchPlayer);
         SG.appendChild(div);
     } else if (player.position === "SF") {
         const div = document.createElement('div') as HTMLDivElement;
+        SF.innerHTML='Small Forward';
         const name = document.createElement('p') as HTMLParagraphElement;
         name.textContent = player.playerName
         const threeP = document.createElement('p') as HTMLParagraphElement;
@@ -116,6 +119,7 @@ SEARCH_PLAYER.addEventListener('submit', searchPlayer);
         SF.appendChild(div);
     } else if (player.position === "PF") {
         const div = document.createElement('div') as HTMLDivElement;
+        PF.innerHTML='Power Forward';
         const name = document.createElement('p') as HTMLParagraphElement;
         name.textContent = player.playerName
         const threeP = document.createElement('p') as HTMLParagraphElement;
@@ -131,6 +135,7 @@ SEARCH_PLAYER.addEventListener('submit', searchPlayer);
         PF.appendChild(div);
     } else if (player.position === "C") {
         const div = document.createElement('div') as HTMLDivElement;
+        C.innerHTML='Center';
         const name = document.createElement('p') as HTMLParagraphElement;
         name.textContent = player.playerName
         const threeP = document.createElement('p') as HTMLParagraphElement;
