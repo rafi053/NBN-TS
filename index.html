@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="main-page">
+        <h1>My Fantasy Team</h1>
+        <div id="players">
+            <div id="pg">Point Guard</div>
+            <div id="sg">11</div>
+            <div id="sf">11</div>
+            <div id="pf">11</div>
+            <div id="c">11</div>
+        </div>
+    </section id="result-page">
+        <h1>NBM Player Search</h1>
+        <section>
+            <form id="search-player">
+                <select id="select" required>
+                    <option value="PG">PG</option>
+                    <option value='SG'>SG</option>
+                    <option value='SF'>SF</option>
+                    <option value='PF'>PF</option>
+                    <option value='C'>C</option>
+                </select>
+                <input  type="range" min="0" max="20000" id="range-point" >
+                <input type="range" min="0" max="100" id="range-in" >
+                <input type="range" min="0" max="100" id="range-aot">
+                <button type="submit">Search Player</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Points</th>
+                        <th>FG%</th>
+                        <th>3P%</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
